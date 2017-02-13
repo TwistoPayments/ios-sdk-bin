@@ -22,8 +22,8 @@ NS_ASSUME_NONNULL_END
 
 @property (nonatomic, weak, nullable) id <TwistoCheckDelegate> delegate;
 NS_ASSUME_NONNULL_BEGIN
-- (nullable instancetype)initWithPublicKey:(NSString *)key;
-- (nullable instancetype)initWithPublicKey:(NSString *)key withDelegate: (id<TwistoCheckDelegate>)delegate;
+- (nonnull instancetype)initWithPublicKey:(NSString *)key;
+- (nonnull instancetype)initWithPublicKey:(NSString *)key withDelegate: (id<TwistoCheckDelegate>)delegate;
 - (void)checkWithPayload: (NSData *)payload;
 - (void)checkWithPayload:(NSData *)data acceptedCompletionHandler: (void(^)(NSString * transactionId))acceptedCompletionHandler rejectedCompletionHandler: (void(^)(NSString * transactionId, NSString  * reason))rejectedCompletionHandler errorCompletionHandler: (void(^ )(NSError * error))errorCompletionHandler;
 NS_ASSUME_NONNULL_END
