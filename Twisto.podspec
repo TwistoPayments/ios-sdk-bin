@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Twisto'
-  s.version          = '1.4'
+  s.version          = '1.5'
   s.summary          = 'Twisto iOS SDK framework'
 
   s.description      = <<-DESC
@@ -22,15 +22,14 @@ Copyright 2016 Twisto Payments a.s. All rights reserved.
                             LICENSE
   }
   s.author           = { 'Twisto Payments a.s.' => 'devs@twisto.cz' }
-  s.source           = { :git => 'https://github.com/TwistoPayments/ios-sdk-bin.git', :tag => '1.4' }
-  s.source_files       = 'iOS/Twisto.framework/Versions/A/Headers/Twisto.h'
+  s.source           = { :git => 'https://github.com/TwistoPayments/ios-sdk-bin.git', :tag => '1.5' }
+  s.source_files       = 'iOS/Twisto.framework/Headers/Twisto.h'
   s.platform = :ios
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '8.0'
 
-  s.ios.public_header_files = 'iOS/Twisto.framework/Versions/A/Headers/Twisto.h'
+  s.ios.public_header_files = 'iOS/Twisto.framework/Headers/Twisto.h'
   s.ios.vendored_frameworks = 'iOS/Twisto.framework'
 
   s.preserve_path      = 'iOS/*'
-  s.resource            = 'iOS/TwistoResources.bundle'
   s.requires_arc = true
 end
